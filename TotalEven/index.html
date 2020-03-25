@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>total even</title>
+    <script>
+        function sumchan() {
+            var n = document.getElementById("number").value;
+            var index = 0;
+            var sum = 0;
+            while (index <= n) {
+                if (index % 2 == 0) {
+                    sum += index;
+                }
+                index++;
+            }
+            document.getElementById("result").innerHTML = sum;
+            alert(sum);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <form method="get" action="">
+            <label for="inputNum">Number Input</label><br><br>
+            <input type="text" id="number" placeholder="0" /><br><br>
+            <input type="button" value="In kết quả" onclick="sumchan()" />
+        </form>
+        <br>
+        <div id="result">
+        </div>
+    </div>
+</body>
+
+</html>
