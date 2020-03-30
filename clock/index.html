@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Countdown timer</h1>
+        <div class="content">
+            <h3>Nhập nhưng thông tin ban đầu</h3>
+            <input type="text" id="h_val" placeholder="gio" name="gio"><br><br>
+            <input type="text" id="m_val" placeholder="phut" name="phut"><br><br>
+            <input type="text" id="s_val" placeholder="giay" name="giay"><br><br>
+            <input type="button" value="start" onclick="start()">
+            <input type="button" value="stop" onclick="stop()">
+        </div>
+        <div class="hien">
+            <span id="h">Giờ</span> :
+            <span id="m">Phút</span> :
+            <span id="s">Giây</span>
+        </div>
+    </div>
+</body>
+
+</html>
